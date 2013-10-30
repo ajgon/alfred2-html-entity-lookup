@@ -265,7 +265,7 @@ class Entities:
         self.query = query
 
     def find(self):
-        return [x for x in Entities.DATA if self.query in x[3]]
+        return [x for x in Entities.DATA if self.query in x[3] or self.query == x[0] or self.query == str(x[1])]
 
     def results(self):
         results = self.find()
