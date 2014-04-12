@@ -262,10 +262,10 @@ class Entities:
     ]
 
     def __init__(self, query):
-        self.query = query
+        self.query = query.replace('\\', '')
 
     def find(self):
-        return [x for x in Entities.DATA if self.query in x[3] or self.query == x[0] or self.query == str(x[1])]
+        return [x for x in Entities.DATA if self.query in x[3] or self.query in x[0]]
 
     def results(self):
         results = self.find()
