@@ -61,7 +61,7 @@
 				<key>script</key>
 				<string>from entities import Entities
 
-en = Entities('{query}')
+en = Entities("{query}")
 print en.results()</string>
 				<key>subtext</key>
 				<string>Displays entities looking similar to provided keyword</string>
@@ -125,7 +125,7 @@ print en.results()</string>
 				<key>script</key>
 				<string>from entities import Entities
 
-print Entities.details('{query}')</string>
+print Entities.details("{query}")</string>
 				<key>subtext</key>
 				<string>Displays details ov given entity</string>
 				<key>title</key>
